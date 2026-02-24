@@ -7,7 +7,7 @@ body{
 }
 
 .container{
-    background-color: #5E936C;
+    background-image: linear-gradient(to right,#5E936C, #3E5F44);
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -43,12 +43,73 @@ body{
     align-items: center;  
 }
 
-.container .menu .title h1{
+.container .menu .subMenu .title {
+    display: flex;
+    justify-content: center;
+
+
+}
+.container .menu .subMenu .title h1{
     font-weight: 400;
-    font-size: 3rem;
+    font-size: 4rem;
     margin-top: 5rem;
     margin-bottom: 4px;
-
-    
 }
 
+.container .menu .subMenu .button{
+    display: flex;
+    justify-content: end;
+}
+
+.container .menu .subMenu .dirrectToSignUp{
+    display: flex;
+    justify-content: center;
+}
+.container .menu .subMenu .dirrectToSignUp a{
+    color: white;
+
+}
+
+@media (max-width: 768px) {
+    .container .menu .subMenu .title h1{
+        font-size: 3rem;
+    }
+}
+@media (max-width: 768px) and (max-height: 1024px) {
+    .container .menu .subMenu .title h1{
+        font-size: 3rem;
+    }
+        .container .menu .subMenu .title{
+        margin-top: 2rem;
+    }
+    
+
+
+}
+
+@media (max-width: 375px){
+    .container .image{
+        display: none;
+    }
+    .container .menu{
+        border: none;
+        align-items: center;
+    }
+        .container .menu .subMenu .title h1{
+        font-size: 1rem;
+    }
+
+
+}
+
+@media(max-width: 435px) and (max-height: 935px){
+        .container .image{
+        display: none;
+    }
+    .container .menu{
+        border: none;
+    }
+        .container .menu .subMenu .title h1{
+        font-size: 3rem;
+    }
+}
