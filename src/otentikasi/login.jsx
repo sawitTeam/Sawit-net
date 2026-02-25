@@ -1,7 +1,7 @@
 import React from "react";
 import './style/login.css'
-import { Button } from "../component/button";
-import { Form } from "../component/form";
+import { Button } from "../component/button/button";
+import { Form } from "../component/form/form";
 
 export const Login = () =>{
     return(
